@@ -1376,17 +1376,13 @@ footer {
     }
     #flow {
         margin-top: 30%;
-        background: red;
         height: 0;
     }
     #flow2 {
         margin-top: 70%;
-
-        background: green;
     }
     #flow3 {
         margin-top: 18%;
-        background: yellow;
     }
     .autom h3 {
         margin-top: -35%;
@@ -1429,7 +1425,6 @@ footer {
     .vid5, .vid6{
         margin-top: 85%;
         margin-bottom: 20%;
-        background: red;
     }
     .vid4 {
         margin-top: 80%;
@@ -1556,7 +1551,7 @@ footer {
     .feat2, .workflow-icon-div2, .find-icon-div2, .brain-icon-div2 {
         display: none;
     }
-    .feat3 {
+    .feat3, hr {
         display: none;
     }
 }
@@ -1823,7 +1818,7 @@ footer {
     .feat2, .workflow-icon-div2 {
         display: none;
     }
-    .feat3, .alt-replace-div {
+    .feat3, .alt-replace-div, hr {
         display: none;
     }
 }
@@ -2136,7 +2131,7 @@ footer {
     .feat2, .workflow-icon-div2 {
         display: none;
     }
-    .feat3, .alt-replace-div {
+    .feat3, .alt-replace-div, hr {
         display: none;
     }
     .started {
@@ -2238,6 +2233,7 @@ footer {
     }
     .icon-first {
         margin-top: -35px;
+       
     }
     .icon-first, .frame, .frame2 {
         width: 60%;
@@ -2286,7 +2282,7 @@ footer {
         padding-left: 10%;
     }
     .vid5, .vid6, .vid4 {
-        margin-top: 190px;
+        margin-bottom: 50px;
         width: 20%;
         height: 20%;
     }
@@ -2391,9 +2387,10 @@ footer {
    .sec-flex-container {
     height: 450px;
     gap: 30px;
+    justify-content: center;
    }
    .uses {
-    width: 120px;
+    width: 130px;
    }
    .uses h2 {
     font-size: 1.2rem;
@@ -2434,7 +2431,7 @@ footer {
     width: 90%;
     margin: auto;
    }
-   .feat3, .alt-replace-div {
+   .feat3, .alt-replace-div, hr {
     display: none;
    }
    .space, .integ, .ask {
@@ -2540,7 +2537,7 @@ footer {
     }
     .sec-flex-container {
         height: 68%;
-        width: 70%;
+        width: 90%;
         gap: 8%;
     }
     .need {
@@ -2568,7 +2565,7 @@ footer {
     .footer-wrap {
         width: 88%;
     }
-    .feat3, .alt-replace-div {
+    .feat3, .alt-replace-div, hr {
         display: none;
     }
 }
@@ -2591,7 +2588,8 @@ footer {
         justify-content: center;
         gap: 10px;
         margin-top: -60px;
-        border-bottom: 0.5px solid #cecece;
+        margin-bottom: 100px;
+
     }
     .acme-div {
         margin-top: -50px;
@@ -2729,14 +2727,14 @@ footer {
         height: 80%;
     }
     #notionapp, #notioncal {
-        height: 88%;
+        height: 100%;
         width: 90%;
     }
     .nav-cta {
         width: 80%;
     }
     .footer-flex1, .footer-flex2 {
-        width: 100%;    
+        width: 77%;    
     }
     .footer-wrap {
         width: 90%;
@@ -2772,8 +2770,8 @@ footer {
 }
 @media screen and (max-width: 440px) {
     .nav-links svg {
-        height: 75px;
-        width: 75px;
+        height: 95px;
+        width: 95px;
         margin-left: 88%;
     }
     .nav-cta {
@@ -2842,7 +2840,7 @@ footer {
     #acme {
         display: block;
         width: 90%;
-        height: 80%;
+        height: 70%;
     }
     .acme-div {
         display: block;
@@ -2859,12 +2857,17 @@ footer {
     .wiki-temp3 {
         object-fit: cover;
     }
-    
+    .third {
+        position: relative;
+        height: 50%;
+    }
      .third-flex-cont {
-        height: 1100px;
+        height: 900px;
      }
     #notioncal, #notionapp {
         height: 100%;
+        position: absolute;
+       bottom: 0;
     }
     .need-text-div h2 {
         font-size: 2rem;
@@ -2907,10 +2910,6 @@ footer {
     .third {
         height: 35%;
     }
-    #notionapp, #notioncal {
-        width: 90%;
-        height: 430px;
-    }
     .notion-1 p, .notion-1 h5 {
         font-size: 0.69rem;
         width: 100%;
@@ -2935,6 +2934,14 @@ footer {
     .brain-text2 h2, .brain-text2 p {
         margin-bottom: 30px;
     }
+    hr {
+        display: block;
+    }
+    .screen-mobile, #roadmap-pic, #acme, #brain-storm {
+        height: 80%;
+        
+    }
+    
 
 }
 @media screen and (max-width: 300px) {
@@ -3134,6 +3141,8 @@ footer {
         margin-top: 0;
     }
   }
-
-
-   
+  @media screen and (min-width: 1300px) {
+    hr {
+        display: none;
+    }
+}
